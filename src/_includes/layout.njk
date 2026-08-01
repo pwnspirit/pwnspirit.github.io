@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "pwnspirit" }}</title>
+  <meta name="description" content="{{ description or "pwnspirit — security researcher" }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/avatar.svg">
+</head>
+<body>
+  <div class="wrap">
+    <header class="profile">
+      <img class="avatar" src="/img/avatar.svg" alt="pwnspirit avatar">
+      <div class="profile-text">
+        <a class="site-title" href="/">pwnspirit</a>
+        <p class="tagline">Security researcher</p>
+      </div>
+      <nav class="nav">
+        <a href="https://github.com/pwnspirit" target="_blank" rel="noopener">Github</a>
+        <a href="https://x.com/pwnspirit" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://linkedin.com/in/pwnspirit" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://hackerone.com/hehacksforfun" target="_blank" rel="noopener">HackerOne</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; {{ year }} pwnspirit</p>
+    </footer>
+  </div>
+</body>
+</html>
